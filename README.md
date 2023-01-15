@@ -15,5 +15,23 @@ git clone https://github.com/klarekante/swarm-service-handler.git
 3. Run the script with command line arguments
 > ./swarm-service-handler --help
 
-You can pass command line arguments using the flag package, for example:
-> swarm-service-handler --stop --services service1,service2
+
+```
+usage: service-manager [-services string] [-restart] [-stop] [-backup] [-restore] [-all]
+
+Service Manager is a script that allows you to perform various operations on Docker services deployed in a Swarm mode cluster.
+
+optional arguments:
+  -services string
+        Comma separated names of services
+  -restart
+        Restart the specified services
+  -stop
+        Stop the specified services
+  -backup
+        Backup running services
+  -restore
+        Restore services from backup
+  -all
+        Operate on all running services
+```
